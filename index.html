@@ -42,7 +42,7 @@
         const response = await fetch(url, {
           method: "GET",
           headers: {
-            "Authorization": "Basic " + btoa("Администратор:777"),
+            "Authorization": "Basic " + window.btoa("Администратор:777"),
             "Accept": "application/json"
           }
         });

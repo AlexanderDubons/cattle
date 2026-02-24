@@ -41,7 +41,10 @@
 
         const response = await fetch(url, {
           method: "GET",
-      
+            headers: {
+            "Authorization": "Basic " + window.btoa("Администратор:777"),
+            "Accept": "application/json"
+          }
         });
 
         if (!response.ok) {

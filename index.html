@@ -37,7 +37,7 @@
 
       try {
         // Если нужно передавать значение в query‑параметре, меняйте имя параметра (input) на нужное
-        const url = urlBase + "?input=" + encodeURIComponent(input);
+        const url = urlBase + "/" + encodeURIComponent(input);
 
         const response = await fetch(url, {
           method: "GET",

@@ -50,14 +50,14 @@
         if (!response.ok) {
           const text = await response.text();
           resultEl.textContent =
-            "111Ошибка HTTP " + response.status + " " + response.statusText + "\n\n" + text;
+            "Ошибка HTTP " + response.status + " " + response.statusText + "\n\n" + text;
           return;
         }
 
         const data = await response.json();
         resultEl.textContent = JSON.stringify(data, null, 2);
       } catch (err) {
-        resultEl.textContent = "Ошибка при выполнении запроса:\n" + err + "\n" + url;
+        resultEl.textContent = "11Ошибка при выполнении запроса:\n" + err + "\n" + url;
       }
     });
   </script>
